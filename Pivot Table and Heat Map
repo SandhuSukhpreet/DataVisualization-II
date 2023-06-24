@@ -1,0 +1,6 @@
+#Drawing Pivot Table. It display 2D data table or data frame with all the associated values.
+df2 = df.pivot_table(index='Cylinders', columns='Eng Displ', values='CombMPG', aggfunc='mean')
+print(df2)
+
+#Plotting HeatMap. This heatmap shows all of the engine displacement values along the X axis, and all of the cylinder values along the Y axis.
+sns.heatmap(df2)
